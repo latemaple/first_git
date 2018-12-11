@@ -4,8 +4,11 @@ git的基本语句：
 git status         #查看状态
 git add 文件名       #将文件从工作区提交到暂存区
 git commit -m "提交描述”  #将文件从暂存区提交到git仓库
-git push    #将文件从本地仓库同步到git远程仓库中
 
+第一次提交
 #…or push an existing repository from the command line
 git remote add origin https://github.com/latemaple/xxx.git
 git push -u origin master
+
+之后提交
+git push -f origin master
