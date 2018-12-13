@@ -1,5 +1,18 @@
 第一个git管理的文件
 
+基本信息设置
+1.设置用户名
+git config --global user.name 'xxxxxxxxx'
+2.设置用户名邮箱
+git config --global user.name 'xxxxxxxxxx@xxx.com
+
+初始化一个新的Git仓库
+1.创建文件夹
+（1）右键创建
+（2）mkdir 文件名
+2.在文件内初始化Git（创建Git仓库）
+    git init
+
 git的基本语句：
 git status         #查看状态
 git add 文件名       #将文件从工作区提交到暂存区
