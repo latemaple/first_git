@@ -21,13 +21,13 @@ git commit -m "提交描述”  #将文件从暂存区提交到git仓库
 第一次提交
 #…or push an existing repository from the command line
 git remote add origin https://github.com/latemaple/xxx.git
+git push origin master     #提交
 git push -u origin master   #通过-u之后再提交，不需要写origin master
 
-下次提交
+下次提交，覆盖GitHub上原内容
 git push 
-
-之后提交，本地重新提交，覆盖GitHub上原来内容
+之后提交，本地重新提交，覆盖GitHub上原内容
 git push -f origin master
 
-将远程GitHub上的内容合并到本地
+将远程GitHub上的内容合并到本地，如果远程GitHub上与本地有区别，无法直接上传时，需要用这一步
 git pull --rebase origin master
