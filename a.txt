@@ -6,27 +6,30 @@ git config --global user.name 'xxxxxxxxx'
 2.设置用户名邮箱
 git config --global user.name 'xxxxxxxxxx@xxx.com
 
-初始化一个新的Git仓库
+git的基本语句：
+#本地创建到上传到GitHub
+
+#1.初始化一个新的Git仓库
 1.创建文件夹
-（1）右键创建
-（2）mkdir 文件名
+（1）右键创建（或mkdir 文件名）
 2.在文件内初始化Git（创建Git仓库）
     git init
+    #如果无法显示 '.git' 则需要设置显示隐藏文件
 
-git的基本语句：
+#2.提交到远程GitHub
 git status         #查看状态
 git add 文件名       #将文件从工作区提交到暂存区
-git commit -m "提交描述”  #将文件从暂存区提交到git仓库
+git commit -m "提交描述”  #将文件从暂存区提交到git仓库，文件描述随意随意内容
 
 第一次提交
 #…or push an existing repository from the command line
 git remote add origin https://github.com/latemaple/xxx.git
-git push origin master     #提交
-git push -u origin master   #通过-u之后再提交，不需要写origin master
+git push origin master     #普通提交
+git push -u origin master   #通过-u之后再提交，之后提交不需要再写origin master
 
 下次提交，覆盖GitHub上原内容
 git push 
-之后提交，本地重新提交，覆盖GitHub上原内容
+之后提交，远程和本地不相同，本地重新提交，覆盖GitHub上原内容
 git push -f origin master
 
 将远程GitHub上的内容合并到本地，如果远程GitHub上与本地有区别，无法直接上传时，需要用这一步
